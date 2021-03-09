@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>punto 2</title>
+	<script type="text/javascript">
+		vec=[];
+		i=0;
+	</script>
+</head>
+<body background="en.jpg" style="background-size: cover;">
+	<center>
+	<input type="text" id="a1" class="uno" style="width: 300px; height: 50px;">
+	<br><br>
+	<input type="button" id="a2" class="dos" value="ingresar" onclick="fun1()" style="border: black solid 3px; border-radius: 2,2,2,2; background-color: #1ABC9C; width: 100px; height: 50px;">
+	<br><br>
+	<input type="button" id="a3" class="tres" value="mayor" onclick="fun2()" style="border: black solid 3px; border-radius: 2,2,2,2; background-color: #1ABC9C; width: 100px; height: 50px;">
+	<br><br>
+	<input type="text" id="a4" class="cuatro" style="width: 300px; height: 50px;">
+</center>
+	<script type="text/javascript">
+		c=document.getElementById('a4');
+		function fun1()
+		{
+
+			if(i<=4)
+			{
+				a=document.getElementById('a1').value;
+ 		        vec.push(a);
+ 		        i=i+1;
+ 		        
+			}			
+}
+		function fun2()
+		{
+
+			var mas=Math.max.apply(null, vec);
+			console.log(mas);
+			c.innerHTML=mas;
+
+
+
+		}
+
+
+	</script>
+
+</body>
+</html>
